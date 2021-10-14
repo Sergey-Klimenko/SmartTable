@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Динамическая таблица</title>
+    <link href="style.scss" rel="stylesheet">
+</head>
+<body>
+
+<table border="1" id="table">
+    <tr>
+        <th id="headerId">id книги</th>
+        <th id="headerAuthor">Автор</th>
+        <th id="headerName">Наименование</th>
+        <th id="headerPrice">Цена</th>
+    </tr>
+    <tr>
+        <td><input id="filterId" placeholder="Фильтр" type="text"></td>
+        <td><input id="filterAuthor" placeholder="Фильтр" type="text"></td>
+        <td><input id="filterName" placeholder="Фильтр" type="text"></td>
+        <td><input id="filterPrice" placeholder="Фильтр" type="text"></td>
+    </tr>
+    <tbody id="tableContent">
+    </tbody>
+</table>
+<div id="paginator">
+
+    <button class="paginatorButton" id="paginatorStart"><<</button>
+    <button class="paginatorButton" id="paginatorPrevious"><</button>
+
+    <div id="pages"></div>
+
+    <button class="paginatorButton" id="paginatorNext">></button>
+    <button class="paginatorButton" id="paginatorEnd">>></button>
+
+    <div class="page-amount">
+        <select id="selectLimit">
+            <option>2</option>
+            <option>3</option>
+            <option selected>4</option>
+            <option>8</option>
+        </select>
+    </div>
+
+</div>
+<div id="message"></div>
+<script src="main.js"></script>
+</body>
+</html>

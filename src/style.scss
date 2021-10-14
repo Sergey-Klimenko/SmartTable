@@ -1,0 +1,75 @@
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+input {
+  caret-color: auto;
+  padding: 0;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+#paginator {
+  caret-color: transparent;
+  display: flex;
+  flex-grow: 2;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  font-size: 20px;
+
+  div {
+    flex-grow: 0.01;
+  }
+
+  div#pages {
+    display: flex;
+    flex-grow: 0;
+    cursor: pointer;
+
+    span {
+      padding: 3px 7px;
+      display: flex;
+    }
+  }
+}
+
+
+.paginatorButton {
+  background-color: unset;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+select {
+  width: 50px;
+  border: 1px solid #CCC;
+  font-size: 20px;
+}
+
+#paginator #pages span.activated {
+  background-color: #cbcbff;
+  border: #8888aa;
+  border-radius: 5px;
+}
+
+table {
+  caret-color: transparent;
+  cursor: default;
+  border-collapse: collapse;
+  width: 100%;
+
+  th {
+    width: 25%;
+  }
+}
+
+#message {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+

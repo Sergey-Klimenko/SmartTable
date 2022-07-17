@@ -24,6 +24,7 @@ export function prepareSorting() {
     });
 }
 
+
 function sort(sortField) {
     sortData(dataForTable, sortField);
     showData();

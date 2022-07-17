@@ -55,4 +55,4 @@ function sortData(data, sortField) {
     );
     sortState[sortField] = -sortState[sortField];
 }
-// conflict!
+// conflict
